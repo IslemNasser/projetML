@@ -1,0 +1,491 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='wassim.css') }}">
+    
+    
+    
+    <title>SmartFits Online Clothing Store</title>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+   <link rel="stylesheet" href="static/css/styles.css" />
+   <link rel="stylesheet" href="static/fonts/fonts.css">
+   <!-- Icons -->
+   <link rel="stylesheet" href="static/fonts/font-icons.css">
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+   <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="static/css/animate.css">
+</head>
+<body>
+  <!-- section 111111111111  -->
+  <header id="header" class="header-default header-uppercase">
+    <div class="container-full px_15 lg-px_40">
+        <div class="row wrapper-header align-items-center">
+            <div class="col-md-4 col-3 tf-lg-hidden">
+                <a href="#mobileMenu" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="btn-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                        <path d="M2.00056 2.28571H16.8577C17.1608 2.28571 17.4515 2.16531 17.6658 1.95098C17.8802 1.73665 18.0006 1.44596 18.0006 1.14286C18.0006 0.839753 17.8802 0.549063 17.6658 0.334735C17.4515 0.120408 17.1608 0 16.8577 0H2.00056C1.69745 0 1.40676 0.120408 1.19244 0.334735C0.978109 0.549063 0.857702 0.839753 0.857702 1.14286C0.857702 1.44596 0.978109 1.73665 1.19244 1.95098C1.40676 2.16531 1.69745 2.28571 2.00056 2.28571ZM0.857702 8C0.857702 7.6969 0.978109 7.40621 1.19244 7.19188C1.40676 6.97755 1.69745 6.85714 2.00056 6.85714H22.572C22.8751 6.85714 23.1658 6.97755 23.3801 7.19188C23.5944 7.40621 23.7148 7.6969 23.7148 8C23.7148 8.30311 23.5944 8.59379 23.3801 8.80812C23.1658 9.02245 22.8751 9.14286 22.572 9.14286H2.00056C1.69745 9.14286 1.40676 9.02245 1.19244 8.80812C0.978109 8.59379 0.857702 8.30311 0.857702 8ZM0.857702 14.8571C0.857702 14.554 0.978109 14.2633 1.19244 14.049C1.40676 13.8347 1.69745 13.7143 2.00056 13.7143H12.2863C12.5894 13.7143 12.8801 13.8347 13.0944 14.049C13.3087 14.2633 13.4291 14.554 13.4291 14.8571C13.4291 15.1602 13.3087 15.4509 13.0944 15.6653C12.8801 15.8796 12.5894 16 12.2863 16H2.00056C1.69745 16 1.40676 15.8796 1.19244 15.6653C0.978109 15.4509 0.857702 15.1602 0.857702 14.8571Z" fill="currentColor"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-xl-3 col-md-4 col-6">
+                <a href="/" class="logo-header">
+                    <img src="" alt="logo" class="logo dark-logo">
+                </a>
+            </div>
+            <div class="col-xl-6 tf-md-hidden">
+                <nav class="box-navigation text-center">
+                    <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
+                        <li class="menu-item">
+                            <a href="#" class="item-link fs-14">Home</a>
+                            
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-link fs-14">Shop</a>
+                          
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-link fs-14">Products</a>
+                           
+                        </li>
+                       
+                        <li class="menu-item position-relative">
+                            <a href="#" class="item-link fs-14">Contact</a>
+                           
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xl-3 col-md-4 col-3">
+                <ul class="nav-icon d-flex justify-content-end align-items-center gap-20">
+                    <li class="nav-search"><a href="#canvasSearch" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="nav-icon-item" style="color:black"><i class="icon icon-search"></i></a></li>
+                    <li class="nav-account"><a href="#login" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-account"style="color:black"></i></a></li>
+                    <li class="nav-wishlist"><a href="wishlist.html" class="nav-icon-item"><i class="icon icon-heart" style="color:black"></i><span class="count-box">1</span></a></li>
+                    <li class="nav-cart"><a href="#shoppingCart" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-bag"></i><span class="count-box">6</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-------------------------------section slider---------------------------------------->
+  
+    
+  <section class="tf-slideshow slider-effect-fade slider-video position-relative">
+    <div class="wrap-slider">
+        <video src="static/slider-header.mp4" autoplay muted playsinline loop></video>
+        <div class="box-content">
+            <div class="container">
+                <h1 class="fade-item fade-item-2 heading text-white">SPRING<br>COLLECTION</h1>
+                <a href="/" class="fade-item fade-item-3 tf-btn fill-outline-light btn-icon radius-3"><span>Shop collection</span><i class="icon icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+  </section>
+      <!-- section 33333333333333333333333333333333333333  -->
+    <section id="collection">
+        <div class="collections container">
+            <div class="content">
+                <img src="static\images\homme.png" alt="img" />
+                <div class="img-content">
+                    <p> Men Clothing Collections</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+               </div>
+            <div class="content3">
+                <img src="static\images\femme.png" alt="img" />
+                <div class="img-content3">
+                    <p>Women Clothing Collections</p>
+                    <button><a href="#sellers2">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="content3">
+              <img src="static\images\enf.png" alt="img" />
+              <div class="img-content3">
+                  <p>Children Clothing Collections</p>
+                  <button><a href="#sellers2">SHOP NOW</a></button>
+              </div>
+          </div>
+        </div>
+       </section>
+
+<!-- Image Upload Section 4444444444444 -->
+
+ <!-- drop down list -->
+
+ <div  id="select" class="dropdown-container">
+  <select id="choix" name="choix" onchange="showDiv()">
+      <option value="Homme">Homme</option>
+      <option value="Femme">Femme</option>
+      <option value="Enfant">Enfant</option>
+  </select>
+</div>
+
+ <!-- Image Upload Section -->
+ <section id="upload" class="upload-section">
+  <div class="container">
+    <h2>Upload Your Clothing Image</h2>
+    <p>Upload an image and click the button to detect fabric type and find similar clothing.</p>
+    <form id="imageForm" method="POST" enctype="multipart/form-data">
+      <input id="fileInput" type="file" name="file" accept="image/*" required>
+      <button id="uploadButton" type="button">Find Similar Clothing</button>
+    </form>
+    <!-- Conteneur pour l'aperçu de l'image -->
+    <div id="previewContainer" >
+      <img id="imagePreview" src="#" alt="Image Preview" style="display: none; width: 100px; height: auto; border: 1px solid #ccc;margin:5% 50% 0% 43%"" />
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<!-- section homme  -->
+<div id="defaultDiv" style="display: none;">
+<section id="sellers">
+  <section id="product1" class="section-p1">
+  <h2>Featured Products for man</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="pro-container">
+    <div class="pro">
+      <img src="static/chem1.jpg" alt="" >
+      <div class="des">
+        <span>ZARA</span>
+        <h5>Chemise red</h5>
+        <div class="rating">★★★★☆</div>
+        <h4>78 DT</h4>
+      </div>
+      <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a> 
+    </div>
+    <div class="pro">
+      <img src="static/pull1.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Black Tshirts</h5>
+        <div class="rating">★★★★☆</div>
+        <h4>78 DT</h4>
+      </div>
+      <a href="/p2"><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/pant7.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Gray pant</h5>
+        <div class="rating">★★★★☆</div>
+        <h4>100 DT</h4>
+      </div>
+      <a href="/p3"><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="static/montre6.jpg" alt="">
+      <div class="des">
+        <span></span>
+        <h5>green watch</h5>
+        <div class="rating">★★★★☆</div>
+      
+        <h4>450 DT</h4>
+      </div>
+      <a href="/p4"><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+
+
+  <!-- section 55555555555555555  -->
+<section id="sellers2">
+  <section id="product1" class="section-p1">
+  <h2>Featured Products</h2>
+  <p>Summer Collection New Modern Design</p>
+  <div class="pro-container">
+    <div class="pro">
+      <img src="https://i.postimg.cc/kg9YYbTn/f1.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Carton Astronault Tshirts</h5>
+        <div class="rating">★★★★☆</div>
+     
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/2yhT2kvb/f2.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Carton Leave Tshirts</h5>
+        <div class="rating">★★★★☆</div>
+        
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/VL9DtNm2/f3.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Rose Multicolor Tshirts</h5>
+        <div class="rating">★★★★☆</div>
+       
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/vZ3hPS1z/f4.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Pink Flower Tshirts</h5>
+        <div class="rating">★★★★☆</div>
+      
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="https://i.postimg.cc/q7FLrhx6/f5.jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Purple Flowering Tshirts</h5>
+        <div class="rating">★★★★☆</div>
+      
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    
+  </div>
+</div>
+
+</div>  
+
+<!-- section femme  -->
+<div id="femmeDiv" >
+  <section id="sellers">
+    <section id="product1" class="section-p1">
+    <h2>Featured Products for women</h2>
+    <p>Summer Collection New Modern Design</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="static/sac1.jpg" alt="" >
+        <div class="des">
+          <span>ZARA</span>
+          <h5>Sac à main</h5>
+          <div class="rating">★★★★☆</div>
+          <h4>450 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a> 
+      </div>
+      <div class="pro">
+        <img src="static/sac2.jpg" alt="">
+        <div class="des">
+          <span>hermes</span>
+          <h5>Sac à main</h5>
+          <div class="rating">★★★★☆</div>
+          <h4>250 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="static/bague1.jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>bague or</h5>
+          <div class="rating">★★★★☆</div>
+          <h4>1100 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="static/jupe2.jpg" alt="">
+        <div class="des">
+          <span></span>
+          <h5>jupe blue</h5>
+          <div class="rating">★★★★☆</div>
+        
+          <h4>45 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+            
+    </div>
+</div>
+
+<!-- section enfant  -->
+<div id="enfantDiv" >
+  <section id="sellers">
+    <section id="product1" class="section-p1">
+    <h2>Featured Products for babies</h2>
+    <p>Summer Collection New Modern Design</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="static/enf3.jpg" alt="" >
+        <div class="des">
+          <span>ZARA</span>
+          <div class="rating">★★★★☆</div>
+          <h4>20 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a> 
+      </div>
+      <div class="pro">
+        <img src="static/suc2.png" alt="">
+        <div class="des">
+          <span>hermes</span>
+          <h5>sucette</h5>
+          <div class="rating">★★★★☆</div>
+          <h4>25 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="static/enf1.jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <div class="rating">★★★★☆</div>
+          <h4>1100 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="static/suc7.png" alt="">
+        <div class="des">
+          <span></span>
+          <h5>sucette</h5>
+          <div class="rating">★★★★☆</div>
+        
+          <h4>45 DT</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+            
+    </div>
+  </div>
+
+
+<div id="uploadedDiv" style="display: none;">
+  
+
+  <h1 id="similarImagesHeading">Similar Images Found</h1>
+  <ul id="similarImagesList">
+  </ul>
+  
+</div>
+
+<script>
+
+
+  const uploadButton = document.getElementById('uploadButton');
+  const fileInput = document.getElementById('fileInput');
+  const defaultDiv = document.getElementById('defaultDiv');
+  const femmeDiv = document.getElementById('femmeDiv');
+  const enfantDiv = document.getElementById('enfantDiv');
+  const select = document.getElementById('select');
+  const uploadedDiv = document.getElementById('uploadedDiv');
+
+  uploadButton.addEventListener('click', function() {
+    const file = fileInput.files[0];  
+    if (!file) {
+      alert("Please select an image file first.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    fetch('/', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json()) 
+    .then(data => {
+      const similarImagesList = uploadedDiv.querySelector('ul');
+      similarImagesList.innerHTML = ''; 
+      if (data.similar_images && data.similar_images.length > 0) {
+          data.similar_images.forEach(image => {
+              const li = document.createElement('li');
+              li.innerHTML = `<img style="width:300px ; height:380px" src="static/${image}" alt="Similar Image">`;
+              similarImagesList.appendChild(li);
+          });
+          uploadedDiv.style.display = 'block'; 
+          defaultDiv.style.display = 'none'; 
+          femmeDiv.style.display = 'none'; 
+          enfantDiv.style.display = 'none'; 
+          select.style.display = 'none'; 
+
+      } else {
+          const noImagesMsg = document.createElement('li');
+          noImagesMsg.textContent = "No similar images found.";
+          similarImagesList.appendChild(noImagesMsg);
+          uploadedDiv.style.display = 'block'; 
+          defaultDiv.style.display = 'none'; 
+          femmeDiv.style.display = 'none'; 
+          enfantDiv.style.display = 'none';
+          select.style.display = 'none'; 
+
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+
+  defaultDiv.style.display = 'block'; 
+</script>
+<script>
+  function showDiv() {
+      // Masquer toutes les divs d'informations
+      document.getElementById("defaultDiv").style.display = "none";
+      document.getElementById("femmeDiv").style.display = "none";
+      document.getElementById("enfantDiv").style.display = "none";
+
+      // Récupérer la valeur sélectionnée
+      var choix = document.getElementById("choix").value;
+
+      // Afficher la div correspondante
+      if (choix === "Homme") {
+          document.getElementById("defaultDiv").style.display = "block";
+      } else if (choix === "Femme") {
+          document.getElementById("femmeDiv").style.display = "block";
+      } else if (choix === "Enfant") {
+          document.getElementById("enfantDiv").style.display = "block";
+      }
+  }
+</script>
+<script>
+  // JavaScript pour afficher l'aperçu de l'image
+  document.getElementById('fileInput').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const imagePreview = document.getElementById('imagePreview');
+        imagePreview.src = e.target.result;
+        imagePreview.style.display = 'block';
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
+
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="static/js/carousel.js"></script>
+<script type="text/javascript" src="static/js/count-down.js"></script>
+<script type="text/javascript" src="static/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="static/js/lazysize.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="static/js/wow.min.js"></script>
+<script type="text/javascript" src="static/js/multiple-modal.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
